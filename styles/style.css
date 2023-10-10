@@ -1,0 +1,132 @@
+body{
+    background-color: black;
+    background-image: url("bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin:0;
+    width: 100vw;
+}
+
+h1, h2{
+    color: white;
+    margin: 1rem auto;
+    font-family: 'Electrolize', sans-serif;
+    animation: flicker 1.5s infinite alternate;
+}
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 10px #fff,
+        0 0 18px #fff,
+        0 0 38px #f09,
+        0 0 73px #f09,
+        0 0 80px #f09,
+        0 0 94px #f09,
+        0 0 140px #f09;
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+}
+
+#logo img{
+    margin-top: .6rem;
+    width: 180px;
+}
+
+#table{
+    width:50%;
+    border: 1px solid white;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+td{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+
+.r:hover{
+    background-color: pink;
+}
+
+td .num{
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    left: .5px;
+    color: black;
+}
+
+td b{
+    font-family: 'Electrolize', sans-serif;
+    font-size: 2rem;
+    color: black;
+}
+
+.b{
+    background-color: transparent;
+}
+
+.r{
+    background-color: pink;
+
+}
+
+#user-inputs{
+    color: white;
+}
+
+#user-inputs input{
+    text-transform: uppercase;
+    width: 50%;
+    margin: .5rem auto;
+    font-family: 'Electrolize', sans-serif;
+    border-radius: 10px;
+    border: 0;
+}
+
+
+
+/*  */
+.modal-title{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color:black;
+}
+
+
+.glow-button {
+    font-family: 'Electrolize', sans-serif;
+    --box-shadow-color: black;
+    box-shadow: 0 0 30px var(--box-shadow-color);
+  }
+
+@media (max-width:480px){
+    #table{
+        width:80%;
+        border: 1px solid white;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    td{
+        width: 25px;
+        height: 25px;
+    }
+
+    td b{
+        font-size: 1rem;
+        color: black;
+    }
+}
